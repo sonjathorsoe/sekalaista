@@ -149,4 +149,5 @@ into #tmp_kokonaan
 from #tmpDIAGNOOSIT d
 left join #TMP_viimeisinkaynti v on d.person_ssn=v.HT
 
-select * from #tmp_kokonaan where otetaanmukaan=1
+select HT, dg, dg_date, diagnosed_3years_to_1year_ago, company_id,pv_viimeisesta_seurannasta 
+from #tmp_kokonaan where otetaanmukaan=1
